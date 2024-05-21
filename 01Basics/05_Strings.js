@@ -1,12 +1,23 @@
 const name= "Swapnil"
 const repoCount= 20
 
-// conso/le.log(name + repoCount +"Value")
+// consonle.log(name + repoCount +"Value")
 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 /*
- we are using Backticks(`  `)
+ we generally use Backticks(`  `) beacuse
+-> they allow us to embed any expression using ${...}
+-> they allow a string to span multiple lines
 */
+
+// let guestList = `Guests:
+//  * John
+//  * Pete
+//  * Mary
+// `;
+
+// console.log(guestList);
+
 
 const gameName= new String('swapnil');
 
@@ -19,6 +30,12 @@ const gameName= new String('swapnil');
 
 const newString = gameName.substring(0,4)
 console.log(newString);
+
+
+let str = "stringify";
+
+// start at the 4th position from the right, end at the 1st from the right
+console.log( str.slice(-4, -1) ); // 'gif'
 
 const anotherString = gameName.slice(-17,4)
 console.log(anotherString);
